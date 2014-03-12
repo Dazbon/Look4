@@ -1,0 +1,14 @@
+.header {
+	margin: 5px;	
+}
+
+.header-logo {
+	height: 60px;
+}
+
+.header-logo .header-username {
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+    color: #204184;
+}

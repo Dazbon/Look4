@@ -1,0 +1,8 @@
+<div hflex="1" vflex="1" sclass="header">
+	<hbox hflex="1" vflex="1" align="center">
+		<image src="/assets/imgs/logo_HELP_Look4.png" sclass="header-logo" />
+		<hbox hflex="1" vflex="1" pack="end" align="end">
+			<label value="Anonymous" sclass="header-username"/>
+		</hbox>
+	</hbox>
+</div>

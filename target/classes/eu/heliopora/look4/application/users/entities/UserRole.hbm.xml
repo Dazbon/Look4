@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="eu.heliopora.look4.application.users.entities">
+    <class name="UserRole" table="USER_ROLE">        
+    	<id name="id" column="ID" type="string" length="24">
+      		<generator class="assigned"/>
+    	</id>
+		<version name="version" column="VERSION" unsaved-value="null" type="integer"/>
+      	<property name="creationTime" column="CREATION_TIME" type="timestamp"/>
+    	<property name="modificationTime" column="MODIFICATION_TIME" type="timestamp"/>
+    	<property name="deleted" column="DELETED" type="yes_no" not-null="true"/>
+      	<property name="name" column="NAME" type="string" length="32"/>
+      	<property name="description" column="DESCRIPTION" type="string" length="255"/>
+ 	 	<set name="userBusinessDetails" table="USER_BUSINESS_DETAIL_VS_USER_ROLE" lazy="true" cascade="">
+ 			<key column="USER_ROLE_ID"/>
+ 			<many-to-many column="USER_BUSINESS_DETAIL_ID" class="eu.heliopora.look4.application.users.entities.UserBusinessDetail"/>	
+ 		</set>
+ 		<set name="userPrivileges" table="USER_ROLE_VS_USER_PRIVILEGE" lazy="false" cascade="">
+ 			<key column="USER_ROLE_ID"/>
+ 			<many-to-many column="USER_PRIVILEGE_ID" class="eu.heliopora.look4.application.users.entities.UserPrivilege"/>	
+ 		</set>
+ 	</class>
+</hibernate-mapping>

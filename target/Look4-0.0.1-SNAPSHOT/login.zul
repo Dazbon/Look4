@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>
+<?taglib uri="http://www.zkoss.org/dsp/web/core" prefix="c" ?>
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window id="windowLogin" title="${c:l('panelTitleLogin')}" border="normal"
+	 closable="no" 
+          action="show: slideIn({duration: 400})"  >        
+        <hbox>
+            <grid width="345px" style="border-bottom:none;border-right:none;" >
+                <columns>
+                    <column width="35%"  align="right" ></column>
+                    <column align="left"></column>
+                </columns>
+                <rows>
+                    <row >
+                        <label value="Username : " />
+                        <textbox id="txtboxUsername" value="" sclass="longWidth" />
+                    </row>
+                    <row>
+                        <label value="Password : "/>
+                        <textbox id="txtboxPassword" value="" sclass="longWidth"/>
+                    </row>                                                      
+                    <row>
+                        <label value=""/>                               
+                        <hbox>                                    
+                            <toolbar mold="panel">
+                                <button id="btnLogin" label="login" width="30px"
+                                tooltiptext="login" orient="vertical"/>    
+                            </toolbar>
+                        </hbox>                      
+                    </row>
+                </rows>
+            </grid>        
+        </hbox>        
+    </window>
+</zk>

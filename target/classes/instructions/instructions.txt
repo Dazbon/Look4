@@ -1,0 +1,51 @@
+=====================================================================
+Logging
+=====================================================================
+	Configured in /Look4/src/main/webapp/WEB-INF/log4j.xml
+	
+	import org.apache.log4j.Logger;
+	.....
+	Class ClassName {
+		static final Logger log = Logger.getLogger(ClassName.class);
+		.....
+		if (log.isTraceEnabled()) {
+			log.trace("TRACE level message.");
+		}
+		if (log.isDebugEnabled()) {
+			log.debug("DEBUG level message.");
+		}
+		if (log.isInfoEnabled()) {
+			log.info("INFO level message.");
+		}
+		if (log.isEnabledFor(Level.WARN)) {
+			log.warn("WARN level message.");
+		}
+		if (log.isEnabledFor(Level.ERROR)) {
+			log.error("ERROR level message.");
+		}
+		if (log.isEnabledFor(Level.FATAL)) {
+			log.fatal("FATAL level message.");
+		}
+=====================================================================
+Entities
+=====================================================================
+- extend BasePersistentObjectImpl
+- order of members - fields, null-args constructor, builder constructor, builder, getters and setters, toString
+- validace (not null atd) jenom v Buildru, ne v Hibernatu/SQL
+=====================================================================
+hbm.xml
+=====================================================================
+- leave id, version, creationTime, modificationTime intact
+- string length = 32 (name, firstName, ...)
+- string length = 255 (description, ...)
+- name of many-to-many relationship table = TABLE_NAME_A_VS_TABLE_NAME_B (e.g. USER_ROLE_VS_USER_PRIVILEGE)
+=====================================================================
+Builder
+=====================================================================
+- plugin bpep_1.0.0.SNAPSHOT.jar nakopirovat do eclipse/dropins
+- Builders implement interface Builder<T>
+- instantiation of entities:
+  Person p = new Person.Builder().firstName("Michal").age(18).build();
+=====================================================================
+=====================================================================
+

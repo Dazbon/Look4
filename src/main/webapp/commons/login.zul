@@ -1,0 +1,48 @@
+<?link rel="stylesheet" type="text/css" href="/assets/css/main.css"?>
+<?init class="org.zkoss.zk.ui.util.Composition" arg0="/layout/template-anonymous.zul"?>
+<zk>
+	<hbox self="@define(content)" vflex="1" hflex="1" align="center" pack="center" spacing="20px">
+		<vlayout>
+			<window id="loginWindow" title="HELP Look4" border="normal" hflex="min">
+				<caption label="${project:customerName()}"/>
+				<vbox hflex="min" align="center">
+				    <h:form id="f" name="f" action="j_spring_security_check" method="POST"
+    					xmlns:h="http://www.w3.org/1999/xhtml">
+						<grid hflex="min">
+							<columns>
+								<column hflex="min" align="right" />
+								<column/>
+							</columns>
+							<rows>
+								<row>
+									<label value="Username:"/>
+									<textbox id="u" width="200px" onCreate="self.focus()" name="j_username" value="${SPRING_SECURITY_LAST_USERNAME}"/>
+								</row>
+								<row>
+									<label value="Password:"/>
+									<textbox id="p" type="password" width="200px" name="j_password"/>
+								</row>
+								<row>
+									<label value="Remember me:"/>
+									<checkbox id="r" name="j_spring_security_remember_me"/>
+								</row>
+							</rows>
+						</grid>
+					</h:form>
+					<hbox>
+					<button id="login" label="Login" />
+					<button id="reset" label="Reset" />
+					</hbox>
+				</vbox>
+			</window>
+			<vbox if="${not empty param.login_error}">
+				<!-- In order to read the exact value of login_error parameter, use something like ${paramValues.login_error[0] eq 1} -->
+				<label value="Your login attempt was not successful, try again."/>
+				<label value="Reason: ${SPRING_SECURITY_LAST_EXCEPTION.message}"/>
+			</vbox>
+			<vbox if="${not empty param.long_innactivity}">
+				<label value="You have been  because of long time of inactivity. Please login again."/>
+			</vbox>
+		</vlayout>
+	</hbox>
+</zk>

@@ -1,0 +1,7 @@
+<?link rel="stylesheet" type="text/css" href="/assets/css/main.css"?>
+<?xel-method prefix="project" name="buildVersion" class="eu.heliopora.look4.commons.utils.BuildInformation" signature="java.lang.String getBuildVersion()"?>
+<?xel-method prefix="project" name="buildTimestamp" class="eu.heliopora.look4.commons.utils.BuildInformation" signature="java.lang.String getBuildTimestamp()"?>
+<?init class="org.zkoss.zk.ui.util.Composition" arg0="/layout/template.zul"?>
+<zk>
+    <include self="@define(content)" src="dashboard.zul"/>
+</zk>

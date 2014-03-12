@@ -1,0 +1,15 @@
+<?xel-method prefix="project" name="buildVersion" class="eu.heliopora.look4.commons.utils.BuildInformation" signature="java.lang.String getBuildVersion()"?>
+<?xel-method prefix="project" name="buildTimestamp" class="eu.heliopora.look4.commons.utils.BuildInformation" signature="java.lang.String getBuildTimestamp()"?>
+<?xel-method prefix="project" name="customerName" class="eu.heliopora.look4.commons.utils.CustomerSpecificProperties" signature="java.lang.String getCustomerName()"?>
+<zk>
+	<borderlayout hflex="1" vflex="1">
+		<north vflex="min" border="none" >
+			<include src="/layout/header.zul"/>
+		</north>
+		<center id="mainContent" autoscroll="true" border="none" self="@insert(content)">
+		</center>
+		<south height="50px" border="none">
+			<include src="/layout/footer.zul"/>
+		</south>
+	</borderlayout>
+</zk>

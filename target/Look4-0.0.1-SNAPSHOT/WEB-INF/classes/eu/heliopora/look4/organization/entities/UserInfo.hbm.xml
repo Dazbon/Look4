@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="lukashomola.entity">
+        <!--
+    <class name="UserInfo" table="USER_INFO">        
+    	<id name="id" column="ID" type="string" length="24">
+      		<generator class="assigned"/>
+    	</id>
+		<version name="version" column="VERSION" unsaved-value="null" type="integer"/>
+      	<property name="creationTime" column="CREATION_TIME" type="timestamp"/>
+    	<property name="modificationTime" column="MODIFICATION_TIME" type="timestamp"/>
+      	<property name="firstName" column="FIRST_NAME" type="string" length="32" not-null="false"/>
+      	<property name="lastName" column="LAST_NAME" type="string" length="32" not-null="false"/>
+      	<property name="email" column="EMAIL" type="string" length="32" not-null="false"/>
+      	<property name="phone" column="PHONE" type="string" length="32" not-null="false"/>
+ 	</class>
+ 	-->
+</hibernate-mapping>

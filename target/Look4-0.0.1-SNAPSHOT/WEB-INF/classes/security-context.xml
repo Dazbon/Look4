@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:sec="http://www.springframework.org/schema/security"
+    xsi:schemaLocation="
+    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.1.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+    ">
+   
+    <context:property-placeholder location="classpath:context-properties/security.properties"/>
+    
+    <sec:http pattern="/resources/**" security="none"/>
+     
+	<sec:http auto-config="true" disable-url-rewriting="true" use-expressions="true">
+    	
+    	<sec:port-mappings>
+        	<sec:port-mapping http="${port.http}" https="${port.https}"/>
+    	</sec:port-mappings>
+        
+        <sec:intercept-url pattern="/zkau/**" access="permitAll" requires-channel="any"/>
+    	<sec:intercept-url pattern="/login.zul" access="permitAll" requires-channel="https"/>
+    	<sec:intercept-url pattern="/main.zul" access="permitAll" requires-channel="https"/>
+        <sec:intercept-url pattern="/info.html" access="permitAll" requires-channel="any"/>
+        <!--<sec:intercept-url pattern="/**" access="hasRole('${role.user}')" requires-channel="https"/>-->
+         
+    	<sec:session-management session-fixation-protection="migrateSession"/> 
+    	<sec:session-management invalid-session-url="/invalid-session.zul"/>
+    	<sec:session-management>
+        	<sec:concurrency-control max-sessions="1" />
+    	</sec:session-management>  
+          
+    	<sec:form-login login-page="/login.zul"
+    		default-target-url="/main.zul"
+        	authentication-failure-url="/login.zul?login_error=1"
+        	login-processing-url="/j_spring_security_check"/> 
+    	<sec:logout logout-success-url="/logout.zul" invalidate-session="false"/>
+    	
+	</sec:http>
+
+	<sec:global-method-security secured-annotations="enabled" pre-post-annotations="enabled"/>
+	
+	<sec:authentication-manager>
+		<sec:authentication-provider ref="authenticationProvider"/>
+	</sec:authentication-manager>
+	
+	<bean id="authentificationPasswordEncoder" class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"
+    	c:strength="${BCrypt.strength}"/>
+	
+	<bean id="authenticationProvider" class="eu.heliopora.look4.authentication.services.impl.AuthenticationProviderImpl">
+		<!--<property name="passwordEncoder" ref="authentificationPasswordEncoder"/>-->
+	</bean>
+		    
+</beans>

@@ -1,0 +1,4 @@
+Hibernate
+http://meri-stuff.blogspot.cz/2012/03/jpa-tutorial.html
+http://www.sitexa.cn/?p=386
+http://en.wikibooks.org/wiki/Java_Persistence/Relationships

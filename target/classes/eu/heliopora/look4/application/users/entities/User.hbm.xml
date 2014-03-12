@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="eu.heliopora.look4.application.users.entities">
+    <class name="User" table="USER">        
+    	<id name="id" column="ID" type="string" length="24">
+      		<generator class="assigned"/>
+    	</id>
+		<version name="version" column="VERSION" unsaved-value="null" type="integer"/>
+      	<property name="creationTime" column="CREATION_TIME" type="timestamp"/>
+    	<property name="modificationTime" column="MODIFICATION_TIME" type="timestamp"/>
+    	<property name="deleted" column="DELETED" type="yes_no" not-null="true"/>
+    	<many-to-one name="userAuthenticationDetail" class="eu.heliopora.look4.application.users.entities.UserAuthenticationDetail" column="USER_AUTHENTICATION_DETAIL_ID" unique="true" lazy="false" cascade="all"/>
+    	<many-to-one name="userBusinessDetail" class="eu.heliopora.look4.application.users.entities.UserBusinessDetail" column="USER_BUSINESS_DETAIL_ID" unique="true" lazy="false" cascade="all"/>      	   	
+ 	</class>
+</hibernate-mapping>
