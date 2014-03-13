@@ -4,15 +4,15 @@
 <zk>
 	<borderlayout hflex="1" vflex="1">
 		<north vflex="min" border="none" >
-			<include src="/layouts/header.zul"/>
+			<include src="/layout/header.zul"/>
 		</north>
 		<west width="260px" border="none" collapsible="true" splittable="true" minsize="300">
-			<include src="/layouts/sidebar.zul"/>
+			<include src="/layout/sidebar.zul"/>
 		</west>
 		<center id="mainContent" autoscroll="true" border="none" self="@insert(content)">
 		</center>
 		<south height="50px" border="none">
-			<include src="/layouts/footer.zul"/>
+			<include src="/layout/footer.zul"/>
 		</south>
 	</borderlayout>
 </zk>

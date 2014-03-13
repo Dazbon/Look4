@@ -10,3 +10,75 @@
 [2014-03-13 09:37:17,947] INFO  Property build.timestamp read - value 13.03.2014 09:36
 [2014-03-13 09:37:17,951] INFO  Property customer.name read - value Austin Detonator s.r.o.
 [2014-03-13 09:37:17,951] INFO  Property user.internalNumber.required read - value true
+[2014-03-13 09:43:23,074] INFO  Property build.version read - value 0.0.1-SNAPSHOT
+[2014-03-13 09:43:23,075] INFO  Property build.timestamp read - value 13.03.2014 09:39
+[2014-03-13 09:43:23,078] INFO  Property customer.name read - value Austin Detonator s.r.o.
+[2014-03-13 09:43:23,078] INFO  Property user.internalNumber.required read - value true
+[2014-03-13 09:52:30,695] INFO  Property build.version read - value 0.0.1-SNAPSHOT
+[2014-03-13 09:52:30,696] INFO  Property build.timestamp read - value 13.03.2014 09:51
+[2014-03-13 09:52:30,700] INFO  Property customer.name read - value Austin Detonator s.r.o.
+[2014-03-13 09:52:30,700] INFO  Property user.internalNumber.required read - value true
+[2014-03-13 10:27:30,997] INFO  Property build.version read - value 0.0.1-SNAPSHOT
+[2014-03-13 10:27:30,997] INFO  Property build.timestamp read - value 13.03.2014 10:26
+[2014-03-13 10:27:31,000] INFO  Property customer.name read - value Austin Detonator s.r.o.
+[2014-03-13 10:27:31,000] INFO  Property user.internalNumber.required read - value true
+[2014-03-13 10:34:31,883] INFO  Property build.version read - value 0.0.1-SNAPSHOT
+[2014-03-13 10:34:31,884] INFO  Property build.timestamp read - value 13.03.2014 10:33
+[2014-03-13 10:34:31,887] INFO  Property customer.name read - value Austin Detonator s.r.o.
+[2014-03-13 10:34:31,887] INFO  Property user.internalNumber.required read - value true
+[2014-03-13 10:35:18,235] INFO  Property build.version read - value 0.0.1-SNAPSHOT
+[2014-03-13 10:35:18,236] INFO  Property build.timestamp read - value 13.03.2014 10:34
+[2014-03-13 10:35:18,239] INFO  Property customer.name read - value Austin Detonator s.r.o.
+[2014-03-13 10:35:18,239] INFO  Property user.internalNumber.required read - value true
+[2014-03-13 10:45:15,959] INFO  Property build.version read - value 0.0.1-SNAPSHOT
+[2014-03-13 10:45:15,959] INFO  Property build.timestamp read - value 13.03.2014 10:44
+[2014-03-13 10:45:15,962] INFO  Property customer.name read - value Austin Detonator s.r.o.
+[2014-03-13 10:45:15,962] INFO  Property user.internalNumber.required read - value true
+[2014-03-13 11:00:59,720] INFO  Property build.version read - value 0.0.1-SNAPSHOT
+[2014-03-13 11:00:59,720] INFO  Property build.timestamp read - value 13.03.2014 11:00
+[2014-03-13 11:00:59,723] INFO  Property customer.name read - value Austin Detonator s.r.o.
+[2014-03-13 11:00:59,723] INFO  Property user.internalNumber.required read - value true
+[2014-03-13 11:05:38,313] INFO  Property build.version read - value 0.0.1-SNAPSHOT
+[2014-03-13 11:05:38,313] INFO  Property build.timestamp read - value 13.03.2014 11:05
+[2014-03-13 11:05:38,317] INFO  Property customer.name read - value Austin Detonator s.r.o.
+[2014-03-13 11:05:38,317] INFO  Property user.internalNumber.required read - value true
+[2014-03-13 11:14:18,792] INFO  Property build.version read - value 0.0.1-SNAPSHOT
+[2014-03-13 11:14:18,793] INFO  Property build.timestamp read - value 13.03.2014 11:13
+[2014-03-13 11:14:18,796] INFO  Property customer.name read - value Austin Detonator s.r.o.
+[2014-03-13 11:14:18,796] INFO  Property user.internalNumber.required read - value true
+[2014-03-13 11:31:20,308] INFO  Property build.version read - value 0.0.1-SNAPSHOT
+[2014-03-13 11:31:20,309] INFO  Property build.timestamp read - value 13.03.2014 11:30
+[2014-03-13 11:31:20,312] INFO  Property customer.name read - value Austin Detonator s.r.o.
+[2014-03-13 11:31:20,312] INFO  Property user.internalNumber.required read - value true
+[2014-03-13 11:32:40,488] INFO  Property build.version read - value 0.0.1-SNAPSHOT
+[2014-03-13 11:32:40,489] INFO  Property build.timestamp read - value 13.03.2014 11:32
+[2014-03-13 11:32:40,493] INFO  Property customer.name read - value Austin Detonator s.r.o.
+[2014-03-13 11:32:40,493] INFO  Property user.internalNumber.required read - value true
+[2014-03-13 12:37:40,351] INFO  Property build.version read - value 0.0.1-SNAPSHOT
+[2014-03-13 12:37:40,444] INFO  Property build.timestamp read - value 13.03.2014 12:37
+[2014-03-13 12:37:40,448] INFO  Property customer.name read - value Austin Detonator s.r.o.
+[2014-03-13 12:37:40,448] INFO  Property user.internalNumber.required read - value true
+[2014-03-13 12:42:00,620] INFO  Property build.version read - value 0.0.1-SNAPSHOT
+[2014-03-13 12:42:00,621] INFO  Property build.timestamp read - value 13.03.2014 12:41
+[2014-03-13 12:42:00,624] INFO  Property customer.name read - value Austin Detonator s.r.o.
+[2014-03-13 12:42:00,624] INFO  Property user.internalNumber.required read - value true
+[2014-03-13 12:47:05,842] INFO  Property build.version read - value 0.0.1-SNAPSHOT
+[2014-03-13 12:47:05,842] INFO  Property build.timestamp read - value 13.03.2014 12:46
+[2014-03-13 12:47:05,846] INFO  Property customer.name read - value Austin Detonator s.r.o.
+[2014-03-13 12:47:05,846] INFO  Property user.internalNumber.required read - value true
+[2014-03-13 12:53:02,312] INFO  Property build.version read - value 0.0.1-SNAPSHOT
+[2014-03-13 12:53:02,313] INFO  Property build.timestamp read - value 13.03.2014 12:52
+[2014-03-13 12:53:02,316] INFO  Property customer.name read - value Austin Detonator s.r.o.
+[2014-03-13 12:53:02,316] INFO  Property user.internalNumber.required read - value true
+[2014-03-13 13:00:34,691] INFO  Property build.version read - value 0.0.1-SNAPSHOT
+[2014-03-13 13:00:34,692] INFO  Property build.timestamp read - value 13.03.2014 12:54
+[2014-03-13 13:00:34,811] INFO  Property customer.name read - value Austin Detonator s.r.o.
+[2014-03-13 13:00:34,811] INFO  Property user.internalNumber.required read - value true
+[2014-03-13 13:02:00,331] INFO  Property build.version read - value 0.0.1-SNAPSHOT
+[2014-03-13 13:02:00,333] INFO  Property build.timestamp read - value 13.03.2014 13:01
+[2014-03-13 13:02:00,336] INFO  Property customer.name read - value Austin Detonator s.r.o.
+[2014-03-13 13:02:00,336] INFO  Property user.internalNumber.required read - value true
+[2014-03-13 14:25:03,080] INFO  Property build.version read - value 0.0.1-SNAPSHOT
+[2014-03-13 14:25:03,081] INFO  Property build.timestamp read - value 13.03.2014 14:21
+[2014-03-13 14:25:03,085] INFO  Property customer.name read - value Austin Detonator s.r.o.
+[2014-03-13 14:25:03,085] INFO  Property user.internalNumber.required read - value true

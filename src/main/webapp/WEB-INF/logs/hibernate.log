@@ -193,3 +193,230 @@
 [2014-03-13 09:39:34,093] INFO  HHH000397: Using ASTQueryTranslatorFactory
 [2014-03-13 09:39:34,724] INFO  HHH000227: Running hbm2ddl schema export
 [2014-03-13 09:39:40,463] INFO  HHH000230: Schema export complete
+[2014-03-13 09:52:01,959] INFO  HHH000204: Processing PersistenceUnitInfo [
+	name: Look4
+	...]
+[2014-03-13 09:52:02,132] INFO  HHH000412: Hibernate Core {4.3.4.Final}
+[2014-03-13 09:52:02,136] INFO  HHH000206: hibernate.properties not found
+[2014-03-13 09:52:02,138] INFO  HHH000021: Bytecode provider name : javassist
+[2014-03-13 09:52:02,415] INFO  HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+[2014-03-13 09:52:03,500] INFO  HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[2014-03-13 09:52:03,759] INFO  HHH000397: Using ASTQueryTranslatorFactory
+[2014-03-13 09:52:04,467] INFO  HHH000227: Running hbm2ddl schema export
+[2014-03-13 09:52:08,333] INFO  HHH000230: Schema export complete
+[2014-03-13 10:26:43,462] INFO  HHH000204: Processing PersistenceUnitInfo [
+	name: Look4
+	...]
+[2014-03-13 10:26:43,692] INFO  HHH000412: Hibernate Core {4.3.4.Final}
+[2014-03-13 10:26:43,697] INFO  HHH000206: hibernate.properties not found
+[2014-03-13 10:26:43,699] INFO  HHH000021: Bytecode provider name : javassist
+[2014-03-13 10:26:43,982] INFO  HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+[2014-03-13 10:26:45,149] INFO  HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[2014-03-13 10:26:45,409] INFO  HHH000397: Using ASTQueryTranslatorFactory
+[2014-03-13 10:26:46,070] INFO  HHH000227: Running hbm2ddl schema export
+[2014-03-13 10:26:51,161] INFO  HHH000230: Schema export complete
+[2014-03-13 10:33:05,585] INFO  HHH000227: Running hbm2ddl schema export
+[2014-03-13 10:33:24,793] INFO  HHH000204: Processing PersistenceUnitInfo [
+	name: Look4
+	...]
+[2014-03-13 10:33:25,042] INFO  HHH000412: Hibernate Core {4.3.4.Final}
+[2014-03-13 10:33:25,047] INFO  HHH000206: hibernate.properties not found
+[2014-03-13 10:33:25,050] INFO  HHH000021: Bytecode provider name : javassist
+[2014-03-13 10:33:25,358] INFO  HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+[2014-03-13 10:33:26,490] INFO  HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[2014-03-13 10:33:26,813] INFO  HHH000397: Using ASTQueryTranslatorFactory
+[2014-03-13 10:33:27,344] INFO  HHH000227: Running hbm2ddl schema export
+[2014-03-13 10:33:27,591] ERROR HHH000389: Unsuccessful: alter table organization_unit drop foreign key FK_705xubatc90g39m2unvmui2ou
+[2014-03-13 10:33:27,591] ERROR Can't DROP 'FK_705xubatc90g39m2unvmui2ou'; check that column/key exists
+[2014-03-13 10:33:27,752] ERROR HHH000389: Unsuccessful: alter table user drop foreign key FK_irpwot3i3apj4vpqruy9lt7m1
+[2014-03-13 10:33:27,753] ERROR Can't DROP 'FK_irpwot3i3apj4vpqruy9lt7m1'; check that column/key exists
+[2014-03-13 10:33:27,864] ERROR HHH000389: Unsuccessful: alter table user drop foreign key FK_28h671m50x5d15821kkm06kgd
+[2014-03-13 10:33:27,865] ERROR Can't DROP 'FK_28h671m50x5d15821kkm06kgd'; check that column/key exists
+[2014-03-13 10:33:27,975] ERROR HHH000389: Unsuccessful: alter table user_business_detail_vs_organization_unit drop foreign key FK_gnpf8w4ivwdongnswmks93url
+[2014-03-13 10:33:27,975] ERROR Can't DROP 'FK_gnpf8w4ivwdongnswmks93url'; check that column/key exists
+[2014-03-13 10:33:31,146] INFO  HHH000230: Schema export complete
+[2014-03-13 10:34:55,758] INFO  HHH000204: Processing PersistenceUnitInfo [
+	name: Look4
+	...]
+[2014-03-13 10:34:55,941] INFO  HHH000412: Hibernate Core {4.3.4.Final}
+[2014-03-13 10:34:55,947] INFO  HHH000206: hibernate.properties not found
+[2014-03-13 10:34:55,950] INFO  HHH000021: Bytecode provider name : javassist
+[2014-03-13 10:34:56,237] INFO  HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+[2014-03-13 10:34:57,180] INFO  HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[2014-03-13 10:34:57,516] INFO  HHH000397: Using ASTQueryTranslatorFactory
+[2014-03-13 10:34:58,167] INFO  HHH000227: Running hbm2ddl schema export
+[2014-03-13 10:35:01,863] INFO  HHH000230: Schema export complete
+[2014-03-13 10:44:51,432] INFO  HHH000204: Processing PersistenceUnitInfo [
+	name: Look4
+	...]
+[2014-03-13 10:44:51,708] INFO  HHH000412: Hibernate Core {4.3.4.Final}
+[2014-03-13 10:44:51,713] INFO  HHH000206: hibernate.properties not found
+[2014-03-13 10:44:51,716] INFO  HHH000021: Bytecode provider name : javassist
+[2014-03-13 10:44:52,313] INFO  HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+[2014-03-13 10:44:54,307] INFO  HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[2014-03-13 10:44:55,211] INFO  HHH000397: Using ASTQueryTranslatorFactory
+[2014-03-13 10:44:55,968] INFO  HHH000227: Running hbm2ddl schema export
+[2014-03-13 10:45:02,148] INFO  HHH000230: Schema export complete
+[2014-03-13 10:54:17,085] INFO  HHH000227: Running hbm2ddl schema export
+[2014-03-13 10:54:18,546] INFO  HHH000230: Schema export complete
+[2014-03-13 10:54:21,208] INFO  HHH000204: Processing PersistenceUnitInfo [
+	name: Look4
+	...]
+[2014-03-13 10:54:21,347] INFO  HHH000412: Hibernate Core {4.3.4.Final}
+[2014-03-13 10:54:21,351] INFO  HHH000206: hibernate.properties not found
+[2014-03-13 10:54:21,354] INFO  HHH000021: Bytecode provider name : javassist
+[2014-03-13 10:54:21,597] INFO  HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+[2014-03-13 10:54:22,474] INFO  HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[2014-03-13 10:54:22,707] INFO  HHH000397: Using ASTQueryTranslatorFactory
+[2014-03-13 10:54:23,322] INFO  HHH000227: Running hbm2ddl schema export
+[2014-03-13 10:54:23,468] ERROR HHH000389: Unsuccessful: alter table organization_unit drop foreign key FK_705xubatc90g39m2unvmui2ou
+[2014-03-13 10:54:23,468] ERROR Table 'look4.organization_unit' doesn't exist
+[2014-03-13 10:54:23,469] ERROR HHH000389: Unsuccessful: alter table user drop foreign key FK_irpwot3i3apj4vpqruy9lt7m1
+[2014-03-13 10:54:23,469] ERROR Table 'look4.user' doesn't exist
+[2014-03-13 10:54:23,471] ERROR HHH000389: Unsuccessful: alter table user drop foreign key FK_28h671m50x5d15821kkm06kgd
+[2014-03-13 10:54:23,471] ERROR Table 'look4.user' doesn't exist
+[2014-03-13 10:54:23,473] ERROR HHH000389: Unsuccessful: alter table user_business_detail_vs_organization_unit drop foreign key FK_gnpf8w4ivwdongnswmks93url
+[2014-03-13 10:54:23,473] ERROR Table 'look4.user_business_detail_vs_organization_unit' doesn't exist
+[2014-03-13 10:54:23,474] ERROR HHH000389: Unsuccessful: alter table user_business_detail_vs_organization_unit drop foreign key FK_e0jus9yai696c75cudncar7y5
+[2014-03-13 10:54:23,474] ERROR Table 'look4.user_business_detail_vs_organization_unit' doesn't exist
+[2014-03-13 10:54:23,475] ERROR HHH000389: Unsuccessful: alter table user_business_detail_vs_user_role drop foreign key FK_rvjumektvh396uoh8n2eu5idp
+[2014-03-13 10:54:23,476] ERROR Table 'look4.user_business_detail_vs_user_role' doesn't exist
+[2014-03-13 10:54:23,477] ERROR HHH000389: Unsuccessful: alter table user_business_detail_vs_user_role drop foreign key FK_kf4ah6uhkvbbsrlfxo11430qx
+[2014-03-13 10:54:23,477] ERROR Table 'look4.user_business_detail_vs_user_role' doesn't exist
+[2014-03-13 10:54:23,478] ERROR HHH000389: Unsuccessful: alter table user_role_vs_user_privilege drop foreign key FK_j0k74v6jbuue13b8vdi8e1fxr
+[2014-03-13 10:54:23,478] ERROR Table 'look4.user_role_vs_user_privilege' doesn't exist
+[2014-03-13 10:54:23,479] ERROR HHH000389: Unsuccessful: alter table user_role_vs_user_privilege drop foreign key FK_1uxcos32fwgci7ms1suwx7jo1
+[2014-03-13 10:54:23,479] ERROR Table 'look4.user_role_vs_user_privilege' doesn't exist
+[2014-03-13 10:54:26,813] INFO  HHH000230: Schema export complete
+[2014-03-13 11:00:39,353] INFO  HHH000204: Processing PersistenceUnitInfo [
+	name: Look4
+	...]
+[2014-03-13 11:00:39,560] INFO  HHH000412: Hibernate Core {4.3.4.Final}
+[2014-03-13 11:00:39,564] INFO  HHH000206: hibernate.properties not found
+[2014-03-13 11:00:39,567] INFO  HHH000021: Bytecode provider name : javassist
+[2014-03-13 11:00:39,859] INFO  HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+[2014-03-13 11:00:40,971] INFO  HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[2014-03-13 11:00:41,248] INFO  HHH000397: Using ASTQueryTranslatorFactory
+[2014-03-13 11:00:41,876] INFO  HHH000227: Running hbm2ddl schema export
+[2014-03-13 11:00:46,011] INFO  HHH000230: Schema export complete
+[2014-03-13 11:05:18,464] INFO  HHH000204: Processing PersistenceUnitInfo [
+	name: Look4
+	...]
+[2014-03-13 11:05:18,674] INFO  HHH000412: Hibernate Core {4.3.4.Final}
+[2014-03-13 11:05:18,679] INFO  HHH000206: hibernate.properties not found
+[2014-03-13 11:05:18,681] INFO  HHH000021: Bytecode provider name : javassist
+[2014-03-13 11:05:18,973] INFO  HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+[2014-03-13 11:05:19,953] INFO  HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[2014-03-13 11:05:20,264] INFO  HHH000397: Using ASTQueryTranslatorFactory
+[2014-03-13 11:05:20,918] INFO  HHH000227: Running hbm2ddl schema export
+[2014-03-13 11:05:24,739] INFO  HHH000230: Schema export complete
+[2014-03-13 11:13:48,935] INFO  HHH000204: Processing PersistenceUnitInfo [
+	name: Look4
+	...]
+[2014-03-13 11:13:49,131] INFO  HHH000412: Hibernate Core {4.3.4.Final}
+[2014-03-13 11:13:49,135] INFO  HHH000206: hibernate.properties not found
+[2014-03-13 11:13:49,138] INFO  HHH000021: Bytecode provider name : javassist
+[2014-03-13 11:13:49,422] INFO  HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+[2014-03-13 11:13:50,379] INFO  HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[2014-03-13 11:13:50,668] INFO  HHH000397: Using ASTQueryTranslatorFactory
+[2014-03-13 11:13:51,271] INFO  HHH000227: Running hbm2ddl schema export
+[2014-03-13 11:13:55,024] INFO  HHH000230: Schema export complete
+[2014-03-13 11:31:01,845] INFO  HHH000204: Processing PersistenceUnitInfo [
+	name: Look4
+	...]
+[2014-03-13 11:31:02,049] INFO  HHH000412: Hibernate Core {4.3.4.Final}
+[2014-03-13 11:31:02,053] INFO  HHH000206: hibernate.properties not found
+[2014-03-13 11:31:02,055] INFO  HHH000021: Bytecode provider name : javassist
+[2014-03-13 11:31:02,329] INFO  HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+[2014-03-13 11:31:03,402] INFO  HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[2014-03-13 11:31:03,753] INFO  HHH000397: Using ASTQueryTranslatorFactory
+[2014-03-13 11:31:04,419] INFO  HHH000227: Running hbm2ddl schema export
+[2014-03-13 11:31:09,021] INFO  HHH000230: Schema export complete
+[2014-03-13 11:32:24,165] INFO  HHH000204: Processing PersistenceUnitInfo [
+	name: Look4
+	...]
+[2014-03-13 11:32:24,303] INFO  HHH000412: Hibernate Core {4.3.4.Final}
+[2014-03-13 11:32:24,307] INFO  HHH000206: hibernate.properties not found
+[2014-03-13 11:32:24,309] INFO  HHH000021: Bytecode provider name : javassist
+[2014-03-13 11:32:24,607] INFO  HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+[2014-03-13 11:32:25,676] INFO  HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[2014-03-13 11:32:25,957] INFO  HHH000397: Using ASTQueryTranslatorFactory
+[2014-03-13 11:32:26,636] INFO  HHH000227: Running hbm2ddl schema export
+[2014-03-13 11:32:30,473] INFO  HHH000230: Schema export complete
+[2014-03-13 12:37:19,431] INFO  HHH000204: Processing PersistenceUnitInfo [
+	name: Look4
+	...]
+[2014-03-13 12:37:19,561] INFO  HHH000412: Hibernate Core {4.3.4.Final}
+[2014-03-13 12:37:19,566] INFO  HHH000206: hibernate.properties not found
+[2014-03-13 12:37:19,569] INFO  HHH000021: Bytecode provider name : javassist
+[2014-03-13 12:37:19,844] INFO  HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+[2014-03-13 12:37:20,896] INFO  HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[2014-03-13 12:37:21,288] INFO  HHH000397: Using ASTQueryTranslatorFactory
+[2014-03-13 12:37:21,914] INFO  HHH000227: Running hbm2ddl schema export
+[2014-03-13 12:37:26,612] INFO  HHH000230: Schema export complete
+[2014-03-13 12:41:33,682] INFO  HHH000204: Processing PersistenceUnitInfo [
+	name: Look4
+	...]
+[2014-03-13 12:41:33,831] INFO  HHH000412: Hibernate Core {4.3.4.Final}
+[2014-03-13 12:41:33,835] INFO  HHH000206: hibernate.properties not found
+[2014-03-13 12:41:33,837] INFO  HHH000021: Bytecode provider name : javassist
+[2014-03-13 12:41:34,140] INFO  HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+[2014-03-13 12:41:35,159] INFO  HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[2014-03-13 12:41:35,451] INFO  HHH000397: Using ASTQueryTranslatorFactory
+[2014-03-13 12:41:36,081] INFO  HHH000227: Running hbm2ddl schema export
+[2014-03-13 12:41:40,104] INFO  HHH000230: Schema export complete
+[2014-03-13 12:46:46,316] INFO  HHH000204: Processing PersistenceUnitInfo [
+	name: Look4
+	...]
+[2014-03-13 12:46:46,545] INFO  HHH000412: Hibernate Core {4.3.4.Final}
+[2014-03-13 12:46:46,550] INFO  HHH000206: hibernate.properties not found
+[2014-03-13 12:46:46,553] INFO  HHH000021: Bytecode provider name : javassist
+[2014-03-13 12:46:46,853] INFO  HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+[2014-03-13 12:46:47,882] INFO  HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[2014-03-13 12:46:48,156] INFO  HHH000397: Using ASTQueryTranslatorFactory
+[2014-03-13 12:46:48,782] INFO  HHH000227: Running hbm2ddl schema export
+[2014-03-13 12:46:52,811] INFO  HHH000230: Schema export complete
+[2014-03-13 12:52:42,122] INFO  HHH000204: Processing PersistenceUnitInfo [
+	name: Look4
+	...]
+[2014-03-13 12:52:42,275] INFO  HHH000412: Hibernate Core {4.3.4.Final}
+[2014-03-13 12:52:42,281] INFO  HHH000206: hibernate.properties not found
+[2014-03-13 12:52:42,283] INFO  HHH000021: Bytecode provider name : javassist
+[2014-03-13 12:52:42,709] INFO  HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+[2014-03-13 12:52:44,212] INFO  HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[2014-03-13 12:52:44,463] INFO  HHH000397: Using ASTQueryTranslatorFactory
+[2014-03-13 12:52:45,110] INFO  HHH000227: Running hbm2ddl schema export
+[2014-03-13 12:52:50,563] INFO  HHH000230: Schema export complete
+[2014-03-13 12:55:02,163] INFO  HHH000204: Processing PersistenceUnitInfo [
+	name: Look4
+	...]
+[2014-03-13 12:55:02,463] INFO  HHH000412: Hibernate Core {4.3.4.Final}
+[2014-03-13 12:55:02,468] INFO  HHH000206: hibernate.properties not found
+[2014-03-13 12:55:02,470] INFO  HHH000021: Bytecode provider name : javassist
+[2014-03-13 12:55:02,838] INFO  HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+[2014-03-13 12:55:04,570] INFO  HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[2014-03-13 12:55:04,952] INFO  HHH000397: Using ASTQueryTranslatorFactory
+[2014-03-13 12:55:05,670] INFO  HHH000227: Running hbm2ddl schema export
+[2014-03-13 12:55:30,653] INFO  HHH000230: Schema export complete
+[2014-03-13 13:01:39,428] INFO  HHH000204: Processing PersistenceUnitInfo [
+	name: Look4
+	...]
+[2014-03-13 13:01:39,664] INFO  HHH000412: Hibernate Core {4.3.4.Final}
+[2014-03-13 13:01:39,668] INFO  HHH000206: hibernate.properties not found
+[2014-03-13 13:01:39,671] INFO  HHH000021: Bytecode provider name : javassist
+[2014-03-13 13:01:40,001] INFO  HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+[2014-03-13 13:01:41,247] INFO  HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[2014-03-13 13:01:41,508] INFO  HHH000397: Using ASTQueryTranslatorFactory
+[2014-03-13 13:01:42,187] INFO  HHH000227: Running hbm2ddl schema export
+[2014-03-13 13:01:46,434] INFO  HHH000230: Schema export complete
+[2014-03-13 14:21:30,049] INFO  HHH000204: Processing PersistenceUnitInfo [
+	name: Look4
+	...]
+[2014-03-13 14:21:30,202] INFO  HHH000412: Hibernate Core {4.3.4.Final}
+[2014-03-13 14:21:30,206] INFO  HHH000206: hibernate.properties not found
+[2014-03-13 14:21:30,208] INFO  HHH000021: Bytecode provider name : javassist
+[2014-03-13 14:21:30,509] INFO  HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+[2014-03-13 14:21:31,666] INFO  HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[2014-03-13 14:21:31,921] INFO  HHH000397: Using ASTQueryTranslatorFactory
+[2014-03-13 14:21:32,594] INFO  HHH000227: Running hbm2ddl schema export
+[2014-03-13 14:21:38,980] INFO  HHH000230: Schema export complete

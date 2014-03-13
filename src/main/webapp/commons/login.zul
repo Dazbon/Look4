@@ -6,7 +6,7 @@
 			<window id="loginWindow" title="HELP Look4" border="normal" hflex="min">
 				<caption label="${project:customerName()}"/>
 				<vbox hflex="min" align="center">
-				    <h:form id="f" name="f" action="j_spring_security_check" method="POST"
+				    <h:form id="f" name="f" action="/Look4/j_spring_security_check" method="POST"
     					xmlns:h="http://www.w3.org/1999/xhtml">
 						<grid hflex="min">
 							<columns>
@@ -16,7 +16,7 @@
 							<rows>
 								<row>
 									<label value="Username:"/>
-									<textbox id="u" width="200px" onCreate="self.focus()" name="j_username" value="${SPRING_SECURITY_LAST_USERNAME}"/>
+									<textbox id="u" width="200px" onCreate="self.focus()" name="j_username" value="${sessionScope.SPRING_SECURITY_LAST_USERNAME}"/>
 								</row>
 								<row>
 									<label value="Password:"/>
@@ -28,11 +28,13 @@
 								</row>
 							</rows>
 						</grid>
+						<hbox>
+							<!-- I wanted to use "<button id="submit" label="Login" />", but it did not work with Spring security.
+								 So <h:input.../> is used instead for Login and Reset buttons. -->
+							<h:input type="submit" value="Login"/>
+							<h:input type="reset" value="Reset"/>
+						</hbox>
 					</h:form>
-					<hbox>
-					<button id="login" label="Login" />
-					<button id="reset" label="Reset" />
-					</hbox>
 				</vbox>
 			</window>
 			<vbox if="${not empty param.login_error}">

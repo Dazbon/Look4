@@ -1,0 +1,17 @@
+<grid hflex="1" vflex="1" sclass="sidebar">
+    <columns>
+        <column/>
+        <column/>
+    </columns>
+    <rows>
+        <row>
+            <a href="http://www.zkoss.org/">ZK</a>
+        </row>
+        <row>
+            <a href="http://www.zkoss.org/zkdemo">ZK Demo</a>
+        </row>
+        <row>
+            <a href="http://books.zkoss.org/wiki/ZK_Developer's_Reference">ZK Developer Reference</a>
+        </row>
+    </rows>
+</grid>
