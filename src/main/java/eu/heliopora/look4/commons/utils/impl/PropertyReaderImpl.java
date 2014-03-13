@@ -10,10 +10,6 @@ import eu.heliopora.look4.commons.utils.PropertyReader;
 public class PropertyReaderImpl implements PropertyReader {
 	
 	static final Logger log = Logger.getLogger(PropertyReaderImpl.class);
-	
-	PropertyReaderImpl propertyReaderImpl() {
-		return new PropertyReaderImpl();
-	}
 		
 	public void readStringProperty(String property, Properties props, String propertyName, String defaultValue) {
 		this.readProperty(String.class, property, props, propertyName, defaultValue);

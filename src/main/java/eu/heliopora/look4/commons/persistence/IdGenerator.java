@@ -17,6 +17,6 @@ public class IdGenerator {
         buffer.putLong(uuid.getMostSignificantBits());
         buffer.putLong(uuid.getLeastSignificantBits());
         return Base64.encodeBase64URLSafeString(buffer.array());
-}
+	}
 
 }

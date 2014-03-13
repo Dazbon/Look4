@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	
@@ -26,14 +28,17 @@
 	<!-- PROPERTIES -->
 	
 	<properties>
+		<!-- Encoding (Used internally by Maven as ${project.reporting.outputEncoding}) -->
+    	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<!-- Zk -->
 		<zk.version>7.0.0</zk.version>
 		<zkspring.version>3.0</zkspring.version>
 		<!-- Spring -->
-		<spring.version>3.2.5.RELEASE</spring.version>
+		<spring.version>4.0.2.RELEASE</spring.version>
 		<spring-data-jpa.version>1.5.0.RELEASE</spring-data-jpa.version>
-		<spring-security.version>3.1.4.RELEASE</spring-security.version>
-		<spring-ws.version>2.1.3.RELEASE</spring-ws.version>
+		<spring-security.version>3.2.1.RELEASE</spring-security.version>
+		<spring-ws.version>2.1.4.RELEASE</spring-ws.version>
 		<!-- Commons -->
 		<commons-lang.version>3.2.1</commons-lang.version>
 		<commons-io.version>2.4</commons-io.version>
@@ -51,7 +56,8 @@
 		<!-- Database connectivity -->
 		<mysql-connector.version>5.1.29</mysql-connector.version>
 		<!-- Logging -->
-		<log4j.version>1.2.16</log4j.version>
+		<log4j.version>1.2.17</log4j.version>
+		<slf4j.version>1.7.6</slf4j.version>
 		<!-- Security -->
 		<port.http>8080</port.http>
 		<port.https>8443</port.https>
@@ -194,11 +200,6 @@
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
             <version>${spring.version}</version>
         </dependency>
@@ -333,6 +334,24 @@
 		<!-- Logging -->
 		
 		<dependency>
+       		<groupId>org.slf4j</groupId>
+        	<artifactId>jcl-over-slf4j</artifactId>
+        	<version>${slf4j.version}</version>
+        	<scope>runtime</scope>
+    	</dependency>
+    	<dependency>
+        	<groupId>org.slf4j</groupId>
+        	<artifactId>slf4j-api</artifactId>
+        	<version>${slf4j.version}</version>
+        	<scope>runtime</scope>
+    	</dependency>
+    	<dependency>
+        	<groupId>org.slf4j</groupId>
+        	<artifactId>slf4j-log4j12</artifactId>
+        	<version>${slf4j.version}</version>
+       		<scope>runtime</scope>
+    	</dependency>
+		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
 			<version>${log4j.version}</version>
@@ -343,7 +362,7 @@
 	<!-- BUILD -->
 	
 	<build>
-		<finalName>${project.artifactId}-${version}</finalName>
+		<finalName>${project.artifactId}-${project.version}</finalName>
 		<!-- RESOURCES -->
 		<resources>
 			<resource>

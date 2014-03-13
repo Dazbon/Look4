@@ -8,9 +8,8 @@
 /Users/lukas/Heliopora/HELP/Look4/src/main/java/eu/heliopora/look4/commons/entities/base/PersistentObject.java
 /Users/lukas/Heliopora/HELP/Look4/src/main/java/eu/heliopora/look4/application/users/entities/UserBusinessDetail.java
 /Users/lukas/Heliopora/HELP/Look4/src/main/java/eu/heliopora/look4/commons/utils/PropertyReader.java
-/Users/lukas/Heliopora/HELP/Look4/src/main/java/eu/heliopora/look4/application/users/entities/UserAuthenticationDetail.java
 /Users/lukas/Heliopora/HELP/Look4/src/main/java/eu/heliopora/look4/webapp/MyViewModel.java
-/Users/lukas/Heliopora/HELP/Look4/src/main/java/eu/heliopora/look4/business/organization/dtos/OrganizationUnitDTO.java
+/Users/lukas/Heliopora/HELP/Look4/src/main/java/eu/heliopora/look4/application/users/entities/UserAuthenticationDetail.java
 /Users/lukas/Heliopora/HELP/Look4/src/main/java/eu/heliopora/look4/commons/utils/impl/PropertyReaderImpl.java
 /Users/lukas/Heliopora/HELP/Look4/src/main/java/eu/heliopora/look4/application/users/entities/UserPrivilege.java
 /Users/lukas/Heliopora/HELP/Look4/src/main/java/eu/heliopora/look4/application/users/repositories/UserAuthenticationDetailsRepository.java

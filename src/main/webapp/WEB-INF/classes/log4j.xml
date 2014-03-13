@@ -89,13 +89,13 @@
 	</logger>
 	
 	<logger name="org.springframework">
-        <level value="ALL" />
+        <level value="INFO" />
         <appender-ref ref="STDOUT" />
         <appender-ref ref="ROLLING_FILE_SPRING" />
     </logger>
     
     <logger name="org.hibernate">
-    	<level value="ALL" />
+    	<level value="INFO" />
     	<appender-ref ref="STDOUT" />
     	<appender-ref ref="ROLLING_FILE_HIBERNATE"/>
 	</logger>
