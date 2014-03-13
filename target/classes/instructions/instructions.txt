@@ -47,6 +47,5 @@ Builder
 - instantiation of entities:
   Person p = new Person.Builder().firstName("Michal").age(18).build();
 =====================================================================
-gd
 =====================================================================
 
