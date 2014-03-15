@@ -56,8 +56,8 @@
 		<!-- Database connectivity -->
 		<mysql-connector.version>5.1.29</mysql-connector.version>
 		<!-- Logging -->
-		<log4j.version>1.2.17</log4j.version>
-		<slf4j.version>1.7.6</slf4j.version>
+		<log4j.version>2.0-rc1</log4j.version>
+		<slf4j.version>2.0-alpha2</slf4j.version>
 		<!-- Security -->
 		<port.http>8080</port.http>
 		<port.https>8443</port.https>
@@ -321,6 +321,12 @@
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-entitymanager</artifactId>
 			<version>${hibernate.version}</version>
+			<exclusions>
+            	<exclusion>
+                	<groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+            </exclusion>
+        </exclusions>
 		</dependency>
 		
 		<!-- Database connectivity -->
@@ -334,28 +340,25 @@
 		<!-- Logging -->
 		
 		<dependency>
-       		<groupId>org.slf4j</groupId>
-        	<artifactId>jcl-over-slf4j</artifactId>
-        	<version>${slf4j.version}</version>
-        	<scope>runtime</scope>
-    	</dependency>
-    	<dependency>
-        	<groupId>org.slf4j</groupId>
-        	<artifactId>slf4j-api</artifactId>
-        	<version>${slf4j.version}</version>
-        	<scope>runtime</scope>
-    	</dependency>
-    	<dependency>
-        	<groupId>org.slf4j</groupId>
-        	<artifactId>slf4j-log4j12</artifactId>
-        	<version>${slf4j.version}</version>
-       		<scope>runtime</scope>
-    	</dependency>
-		<dependency>
-			<groupId>log4j</groupId>
-			<artifactId>log4j</artifactId>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
 			<version>${log4j.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-slf4j-impl</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+		<dependency>
+        	<groupId>log4j</groupId>
+        	<artifactId>log4j</artifactId>
+        	<version>1.2.16</version>
+      	</dependency>
 
 	</dependencies>
 	
@@ -367,6 +370,7 @@
 		<resources>
 			<resource>
      			<directory>src/main/resources</directory>
+     			<filtering>true</filtering>
     		</resource>
 			<resource>
      			<directory>src/main/resources/application-properties</directory>

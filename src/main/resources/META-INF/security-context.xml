@@ -12,7 +12,7 @@
     http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
     ">
    
-    <context:property-placeholder location="classpath:context-properties/security.properties"/>
+    <context:property-placeholder location="classpath:application-properties/security.properties"/>
     
     <sec:http pattern="/assets/**" security="none"/>
      

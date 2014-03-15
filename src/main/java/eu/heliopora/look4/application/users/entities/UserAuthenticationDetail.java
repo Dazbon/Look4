@@ -3,155 +3,190 @@ package eu.heliopora.look4.application.users.entities;
 import java.io.Serializable;
 import java.util.Date;
 
+import javax.annotation.PostConstruct;
+import javax.persistence.Transient;
+import javax.servlet.ServletContext;
+
 import org.apache.commons.lang3.Validate;
 import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import eu.heliopora.look4.commons.entities.base.BasePersistentObjectImpl;
 import eu.heliopora.look4.commons.interfaces.IBuilder;
 
+@Repository
 public class UserAuthenticationDetail extends BasePersistentObjectImpl implements Serializable {
 
-	private static final long serialVersionUID = 1L;
-	
-	// If you modify these fields in any way, you have to modify Builder's fields and its build() method as well
+    private static final long serialVersionUID = 1L;
 
-	private String username;
+    // Logger
 
-	private String password;
-	
-	private Date lastLogin;
+    static final Logger log = LogManager.getLogger(UserAuthenticationDetail.class);
 
-	private boolean credentialsNonExpired;
+    // Servlet context
 
-	private boolean enabled;
-	
-	private User user;
-	
-	// No-arguments constructor required by JPA
+    @Transient
+    private static ServletContext servletContext;
 
-	protected UserAuthenticationDetail() {
+    // If you modify these fields in any way, you have to modify Builder's fields and its build()
+    // method as well
 
-	}
-	
-	// Instances can only be created via Builder
+    private String username;
 
-	private UserAuthenticationDetail(Builder builder) {
-		super();
-		this.username = builder.username;
-		this.password = builder.password;
-		this.lastLogin = builder.lastLogin;
-		this.credentialsNonExpired = builder.credentialsNonExpired;
-		this.enabled = builder.enabled;
-		this.user = builder.user;
-	}
-	
-	// Builder
-	
-	public static class Builder implements IBuilder<UserAuthenticationDetail> {
-		private String username;
-		private String password;
-		private Date lastLogin;
-		private boolean credentialsNonExpired;
-		private boolean enabled;
-		private User user;
-		
-		public Builder username(String username) {
-			this.username = username;
-			return this;
-		}
+    private String password;
 
-		public Builder password(String password) {
-			this.password = password;
-			return this;
-		}
-		
-		public Builder lastLogin(Date lastLogin) {
-			this.lastLogin = lastLogin;
-			return this;
-		}
+    private Date lastLogin;
 
-		public Builder credentialsNonExpired(boolean credentialsNonExpired) {
-			this.credentialsNonExpired = credentialsNonExpired;
-			return this;
-		}
+    private boolean credentialsNonExpired;
 
-		public Builder enabled(boolean enabled) {
-			this.enabled = enabled;
-			return this;
-		}
-		
-		public Builder enabled(User user) {
-			this.user = user;
-			return this;
-		}
-		
-		// Validation has to be performed on a newly created instance, not on Builder's fields (Builder is not thread-safe).
+    private boolean enabled;
 
-		public UserAuthenticationDetail build() {
-			UserAuthenticationDetail userAuthenticationDetail = new UserAuthenticationDetail(this);
-			Validate.notNull(userAuthenticationDetail.getUsername());
-			Validate.notNull(userAuthenticationDetail.getPassword());
-			Validate.notNull(userAuthenticationDetail.getEnabled());
-			Validate.notNull(userAuthenticationDetail.getCredentialsNonExpired());
-			return new UserAuthenticationDetail(this);
-		}
-	}
-	
-	// Getters and Setters
+    private User user;
 
-	public String getUsername() {
-		return username;
-	}
+    // No-arguments constructor required by JPA
 
-	public void setUsername(String username) {
-		this.username = username;
-	}
+    protected UserAuthenticationDetail() {
 
-	public String getPassword() {
-		return password;
-	}
+    }
 
-	public void setPassword(String password) {
-		this.password = password;
-	}
+    // Instances can only be created via Builder
 
-	public Date getLastLogin() {
-		return lastLogin;
-	}
+    private UserAuthenticationDetail(Builder builder) {
+        super();
+        this.username = builder.username;
+        this.password = builder.password;
+        this.lastLogin = builder.lastLogin;
+        this.credentialsNonExpired = builder.credentialsNonExpired;
+        this.enabled = builder.enabled;
+        this.user = builder.user;
+    }
 
-	public void setLastLogin(Date lastLogin) {
-		this.lastLogin = lastLogin;
-	}
+    // Builder
 
-	public boolean getCredentialsNonExpired() {
-		return credentialsNonExpired;
-	}
+    public static class Builder implements IBuilder<UserAuthenticationDetail> {
+        private String username;
+        private String password;
+        private Date lastLogin;
+        private boolean credentialsNonExpired;
+        private boolean enabled;
+        private User user;
 
-	public void setCredentialsNonExpired(boolean credentialsNonExpired) {
-		this.credentialsNonExpired = credentialsNonExpired;
-	}
+        public Builder username(String username) {
+            this.username = username;
+            return this;
+        }
 
-	public boolean getEnabled() {
-		return enabled;
-	}
+        public Builder password(String password) {
+            this.password = password;
+            return this;
+        }
 
-	public void setEnabled(boolean enabled) {
-		this.enabled = enabled;
-	}
-	
-	public User getUser() {
-		return user;
-	}
+        public Builder lastLogin(Date lastLogin) {
+            this.lastLogin = lastLogin;
+            return this;
+        }
 
-	public void setUser(User user) {
-		this.user = user;
-	}
-	
-	// For code brevity, toString() method is created via reflection. You can provide custom implementation, if needed.
-	
-	@Override
-	public String toString() {
-		return ToStringBuilder.reflectionToString(this);
-	}
+        public Builder credentialsNonExpired(boolean credentialsNonExpired) {
+            this.credentialsNonExpired = credentialsNonExpired;
+            return this;
+        }
+
+        public Builder enabled(boolean enabled) {
+            this.enabled = enabled;
+            return this;
+        }
+
+        public Builder enabled(User user) {
+            this.user = user;
+            return this;
+        }
+
+        // Validation has to be performed on a newly created instance, not on Builder's fields
+        // (Builder
+        // is not thread-safe).
+
+        public UserAuthenticationDetail build() {
+            UserAuthenticationDetail userAuthenticationDetail = new UserAuthenticationDetail(this);
+            Validate.notNull(userAuthenticationDetail.getUsername());
+            Validate.notNull(userAuthenticationDetail.getPassword());
+            Validate.notNull(userAuthenticationDetail.getEnabled());
+            Validate.notNull(userAuthenticationDetail.getCredentialsNonExpired());
+            return new UserAuthenticationDetail(this);
+        }
+    }
+
+    // Getters and Setters
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public Date getLastLogin() {
+        return lastLogin;
+    }
+
+    public void setLastLogin(Date lastLogin) {
+        this.lastLogin = lastLogin;
+    }
+
+    public boolean getCredentialsNonExpired() {
+        return credentialsNonExpired;
+    }
+
+    public void setCredentialsNonExpired(boolean credentialsNonExpired) {
+        this.credentialsNonExpired = credentialsNonExpired;
+    }
+
+    public boolean getEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(boolean enabled) {
+        this.enabled = enabled;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    // Setting and initializing Servlet context, so we can inject Spring Beans into Hibernate
+    // Entities
+
+    @Autowired
+    public void setServletContext(ServletContext servletContext) {
+        UserAuthenticationDetail.servletContext = servletContext;
+    }
+
+    @PostConstruct
+    public void init() {
+        log.info("Initializing ServletContext as [{}]", UserAuthenticationDetail.servletContext.toString());
+    }
+
+    // For code brevity, toString() method is created via reflection. You can provide custom
+    // implementation, if needed.
+
+    @Override
+    public String toString() {
+        return ToStringBuilder.reflectionToString(this);
+    }
 
 }

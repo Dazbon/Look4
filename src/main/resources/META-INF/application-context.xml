@@ -24,6 +24,10 @@
     
     <import resource="zkoss-context.xml"/>
     
+    <import resource="logger-context.xml"/>
+    
+    <import resource="application-beans/application-beans.xml"/>
+    
     <import resource="business-beans/business-beans.xml"/>
 	
 </beans>

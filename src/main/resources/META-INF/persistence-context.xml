@@ -13,8 +13,8 @@
 	
 	<tx:annotation-driven />
 	
-	<context:property-placeholder location="classpath:context-properties/hibernate.properties" order="1" ignore-unresolvable="true"/>
-	<context:property-placeholder location="classpath:context-properties/datasource.properties" order="2" ignore-unresolvable="true"/>
+	<context:property-placeholder location="classpath:application-properties/hibernate.properties" order="1" ignore-unresolvable="true"/>
+	<context:property-placeholder location="classpath:application-properties/datasource.properties" order="2" ignore-unresolvable="true"/>
 		
 	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
 		<property name="persistenceXmlLocation" value="classpath:META-INF/persistence.xml"/>

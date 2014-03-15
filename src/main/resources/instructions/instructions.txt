@@ -47,5 +47,10 @@ Builder
 - instantiation of entities:
   Person p = new Person.Builder().firstName("Michal").age(18).build();
 =====================================================================
+<<<<<<< master
+=======
+Test pro kaslika..
+
+>>>>>>> f4636b3 Entites
 =====================================================================
 

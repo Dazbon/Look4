@@ -12,14 +12,14 @@
     http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
     ">
    
-    <context:property-placeholder location="classpath:context-properties/security.properties"/>
+    <context:property-placeholder location="classpath:application-properties/security.properties"/>
     
     <sec:http pattern="/assets/**" security="none"/>
      
 	<sec:http auto-config="true" disable-url-rewriting="true" use-expressions="true">
     	
     	<sec:port-mappings>
-        	<sec:port-mapping http="${port.http}" https="${port.https}"/>
+        	<sec:port-mapping http="8080" https="8443"/>
     	</sec:port-mappings>
         
         <!-- ZK AU reqeust -->

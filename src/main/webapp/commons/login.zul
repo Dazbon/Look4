@@ -4,7 +4,7 @@
 	<hbox self="@define(content)" vflex="1" hflex="1" align="center" pack="center" spacing="20px">
 		<vlayout>
 			<window id="loginWindow" title="HELP Look4" border="normal" hflex="min">
-				<caption label="${project:customerName()}"/>
+				<caption label="${customerSpecificPropertiesProvider.customerName}"/>
 				<vbox hflex="min" align="center">
 				    <h:form id="f" name="f" action="/Look4/j_spring_security_check" method="POST"
     					xmlns:h="http://www.w3.org/1999/xhtml">
