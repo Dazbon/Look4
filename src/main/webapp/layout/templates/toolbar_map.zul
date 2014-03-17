@@ -1,0 +1,10 @@
+<zk>
+	<hbox>
+		<button label="" onClick="" image="/assets/imgs/icons/zoom-out.png"
+			tooltip="true" tooltiptext="${labels.tooltip.zoomout}">
+		</button>
+		<button label="" onClick="" image="/assets/imgs/icons/zoom-in.png"
+			tooltip="true" tooltiptext="${labels.tooltip.zoomin }">
+		</button>
+	</hbox>
+</zk>

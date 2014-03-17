@@ -1,0 +1,7 @@
+<zk>
+	<hlayout id="hlHeaderDlg">
+			<include id="incFilter" src="/layout/templates/temp_filter.zul"></include>
+			<space spacing="5px"></space>
+ 			<include id="incDisabled" src="/layout/templates/include_disabled.zul"></include>
+	</hlayout>
+</zk>

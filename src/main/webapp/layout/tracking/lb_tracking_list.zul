@@ -1,0 +1,90 @@
+<?init class="org.zkoss.zkplus.databind.AnnotateDataBinderInit"?>
+
+<zk>
+	
+	<menupopup id="lb_popup">
+		<menuitem id="lb_popup_lb_tracked_subject"
+			label="${labels.lb.header.subject }" checkmark="true" checked="true"
+			onClick="doShowHide(self)" />
+		<menuitem id="lb_popup_lb_tracked_device"
+			label="${labels.lb.header.device }" checkmark="true" checked="true"
+			onClick="doShowHide(self)" />
+		<menuitem id="lb_popup_lb_tracked_GSM"
+			label="${labels.lb.header.GSM }" checkmark="true" checked="true"
+			onClick="doShowHide(self)" />
+		<menuitem id="lb_popup_lb_tracked_GPS"
+			label="${labels.lb.header.GPS }" checkmark="true" checked="true"
+			onClick="doShowHide(self)" />
+		<menuitem id="lb_popup_lb_tracked_alert"
+			label="${labels.lb.header.alert }" checkmark="true" checked="true"
+			onClick="doShowHide(self)" />	
+		</menupopup>
+
+	<listbox id="l_userlist" rows="15" hflex="1">
+		<listhead sizable="true" id="lh_1" menupopup="lb_popup"
+			hflex="1">
+
+			<listheader id="lh_1_subject"
+				label="${labels.lb.header.subject }" sort="auto">
+			</listheader>
+			<listheader id="lh_1_device"
+				label="${labels.lb.header.device }" sort="auto">
+			</listheader>
+			<listheader id="lh_1_GSM" 
+				label="${labels.lb.header.GSM }" sort="auto"></listheader>
+			<listheader id="lh_1_GPS" 
+				label="${labels.lb.header.GPS }" sort="auto"></listheader>
+			<listheader id="lh_1_alert" 
+				label="${labels.lb.header.alert }"
+				sort="auto">
+			</listheader>
+
+		</listhead>
+		<listitem>
+			<listcell label="John"></listcell>
+			<listcell label="D1"></listcell>
+			<listcell label="a"></listcell>
+			<listcell label="b"></listcell>
+			<listcell label="c"></listcell>
+		</listitem>
+		<listitem>
+			<listcell label="Axel"></listcell>
+			<listcell label="D2"></listcell>
+			<listcell label="2"></listcell>
+			<listcell label="3"></listcell>
+			<listcell label="4"></listcell>
+		</listitem>
+	</listbox>
+	<zscript><![CDATA[
+	 void doShowHide(Menuitem mn_item){
+		 String ls_id = mn_item.getId();
+		 		 
+		 switch (ls_id){
+		 case "lb_popup_lb_tracked_subject": {
+			  lh = lh_1_subject;
+			 break;
+		 	}
+		 case "lb_popup_lb_tracked_device": {
+			lh = lh_1_device;
+			break;
+		 	}
+		 case "lb_popup_lb_tracked_GSM": {
+			 lh = lh_1_GSM;
+			 break;
+		 	}
+		 case "lb_popup_lb_tracked_GPS": {
+			 lh = lh_1_GPS;
+			 break;
+		 	}
+		 case "lb_popup_lb_tracked_alert": {
+			lh = lh_1_alert;
+			break;
+		 	}
+		 }
+		 
+		 mn_item.setChecked(!mn_item.isChecked());
+		 lh.setVisible(mn_item.isChecked());	 
+	 }                 
+	 ]]></zscript>
+	
+</zk>

@@ -1,0 +1,13 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<vlayout width="100%" height="100%">
+		<include src="./layout/templates/t_hbox_mgmt_header.zul"
+			style="border-bottom: none; padding:10px">
+		</include>
+		<include src="./layout/devices/lb_devices_list.zul">
+		</include>
+		<include src="./layout/templates/buttons_management.zul">
+		</include>
+	</vlayout>
+	<include src="./layout/hpt_styles.zul"></include>
+</zk>

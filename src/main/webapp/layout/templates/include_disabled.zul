@@ -1,0 +1,7 @@
+
+<zk>
+		<checkbox id="cbDisable"
+			label="${labels.application.label.includedisabled}"
+			style="font-weight:bold" checked="false">
+		</checkbox>
+</zk>
