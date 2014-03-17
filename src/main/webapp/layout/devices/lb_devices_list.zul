@@ -1,0 +1,35 @@
+
+<zk>
+	<listbox id="l_devicelist" width="100%" height="100%">
+		<listhead sizable="true" id="lh_1">
+			<listheader label="Disabled" sort="auto" hflex="1">
+			</listheader>
+			<listheader label="Device" sort="auto" hflex="4">
+			</listheader>
+			<listheader label="Phone number" sort="auto" hflex="2"></listheader>
+			<listheader label="IMEI" sort="auto" hflex="2">
+			</listheader>
+			<listheader label="Tracked subject" sort="auto" hflex="3"></listheader>
+			<listheader label="${labels.application.menu.org}"
+				sort="auto" hflex="2">
+			</listheader>
+		</listhead>
+		<listitem>
+			<listcell label=""></listcell>
+			<listcell label="1"></listcell>
+			<listcell label="789 859 956"></listcell>
+			<listcell label="1556489464"></listcell>
+			<listcell label="Austin"></listcell>
+			<listcell label="Vsetin"></listcell>
+		</listitem>
+		<listitem>
+			<listcell label=""></listcell>
+			<listcell label="2"></listcell>
+			<listcell label="789 859 957"></listcell>
+			<listcell label="12331465465456"></listcell>
+			<listcell label="Detonator"></listcell>
+			<listcell label="Vsetin"></listcell>
+		</listitem>
+	</listbox>
+
+</zk>

@@ -1,0 +1,144 @@
+<?page title="" contentType="text/html;charset=UTF-8"?>
+
+<zk>
+	<include src="/layout/hpt_styles.zul"></include>
+	<menubar>
+		<menu id="mnSetup"
+			  label="${labels.application.menu.setup}"
+			  sclass="hpt_menu">
+			<menupopup>
+				<menuitem id="mniOrg" 
+						  label="${labels.application.menu.org}"
+						  image="/assets/imgs/icons/org-unit-edit.png"
+						  onClick="addTabPanel(11)" />
+				<menuitem id="mniRoles" 
+						  label="${labels.application.menu.roles}"
+						  onClick="addTabPanel(12)" />
+				<menuitem id="mniUsers" 
+						  label="Users"
+						  image="/assets/imgs/icons/user-edit.png"
+						  onClick="addTabPanel(13)" />
+				<menuitem id="mniDevices" 
+						  label="${labels.application.menu.devices}"
+						  image="/assets/imgs/icons/device.png"
+						  onClick="addTabPanel(14)"/>
+				<menuitem id="mniAlerts"
+						  label="${labels.application.menu.alerts}"
+						  image="/assets/imgs/icons/alert.png"
+						  onClick="addTabPanel(15)"/>
+				<menuitem id="mniTrackedSubjects"
+						  label="${labels.application.menu.trackedsubjects }"
+						  image="/assets/imgs/icons/track-subject.png"
+						  onClick="addTabPanel(16)"/>
+				<menuseparator></menuseparator>
+				<menuitem id="mniExit" 
+						  label="${labels.application.menu.exit }"
+						  image="/assets/imgs/icons/app-exit.png" />
+			</menupopup>
+		</menu>
+		<menuseparator></menuseparator>
+		<menu  id="mnHelp"
+			   label="${labels.application.menu.help}" 
+			   sclass="hpt_menu">
+			<menupopup>
+				<menuitem id="mniHelpItem"
+						  label="${labels.application.menu.help}" 
+						  image="/assets/imgs/icons/help-contents.png" />
+				<menuseparator></menuseparator>
+				<menuitem  id="mniAbout"
+						   label="${labels.application.menu.about}"
+						   image="/assets/imgs/icons/information.png" />
+			</menupopup>
+		</menu>
+	</menubar>
+	<zscript>
+		<![CDATA[
+	    void UserDialogOpen(Integer menu_choice) {
+	    Window win;
+	    String sTemplate, sTitle;
+	    try {
+	         switch (menu_choice){
+	         	case 13: {
+	         		sTemplate="./layout/templates/dialog.zul";
+	         		sTitle="User Management";
+	                break;
+	            }
+	         	case 14: {
+	         		sTemplate="./WEB-INF/templates/devices.zul";
+	         		sTitle="Device Management";
+	                break;
+	         	}
+	         }
+	    } catch (Exception e) {
+	    	e.printStackTrace();
+	      }
+    	win = (Window)Executions.getCurrent().createComponents(sTemplate, null, null);
+        win.setTitle(sTitle);
+        win.setMinwidth(800);
+        win.setMinheight(300);
+        win.doModal();
+	    return;}
+	]]></zscript>
+	
+	<!-- Toto prijde prepsat do JAVA -->
+	
+	<zscript><![CDATA[
+	import org.zkoss.util.resource.Labels;
+	   void addTabPanel(Integer menuChoice){
+   		String sTitle, sComponents, sID;
+		   switch (menuChoice){
+		   	case 11: {
+				sTitle = Labels.getLabel("application.menu.org");
+				sComponents = "/layout/organization/organization_tree.zul";
+				sID = "organization";
+				break;
+		   	}
+		   	case 12: {
+		   		sTitle = Labels.getLabel("application.menu.roles");
+		   		sComponents = "/layout/users/roles_list.zul";
+		   		sID = "roles";
+		   		break;
+		   	}
+		   	case 13:{
+				sTitle = Labels.getLabel("application.menu.users");
+				sComponents = "/layout/users/users_list.zul";
+				sID = "users";
+				break;
+		   	}
+		   	case 14:{
+				sTitle = Labels.getLabel("application.menu.devices");
+				sComponents = "/layout/devices/devices_list.zul";
+				sID = "devices";
+				break;
+		   	}
+		   	case 15:{
+		   		sTitle = Labels.getLabel("application.menu.alerts");
+		   		sComponents = "/layout/alerts/alerts_list.zul";
+		   		sID = "alerts";
+		   		break;
+		   	}
+		   	case 16:{
+		   		sTitle = Labels.getLabel("application.menu.trackedsubjects");
+		   		sComponents = "/layout/subjects/subjects_list.zul";
+		   		sID = "trackedsubjects";
+		   		break;
+		   	}
+		   }
+   		Tab newTab = new Tab (sTitle);
+   		newTab.setSelected(true);
+   		newTab.setClosable(true);
+   		newTab.setId(sID);
+       	Tabpanel newTabpanel = new Tabpanel();
+       	Tabpanels mnTabpanels; // = (Tabpanels) Path.getComponent("//main_window/id_mainwindow/main_tabbox/main_tabpanels");
+       	
+       	Tabbox mnTabbox = (Tabbox) Path.getComponent("//pgMainWindow/winMain/tabboxMain");
+       	Tabpanel mnTabpanel = (Tabpanel) Path.getComponent("//pgMainWindow/winMain/tabboxMain/main_tabpanel_alert");
+       	mnTabbox.getTabs().insertBefore(newTab, mnTabpanel);
+       	mnTabpanels = mnTabbox.getTabpanels();
+       	mnTabpanels.appendChild(newTabpanel);
+       	newTabpanel.setParent(mnTabpanels);
+       	newTabpanel.appendChild(execution.createComponents(sComponents,newTabpanel,null));       	
+	    return;}
+	 ]]></zscript>
+</zk>
+	

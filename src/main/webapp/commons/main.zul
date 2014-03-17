@@ -1,5 +1,41 @@
-<?link rel="stylesheet" type="text/css" href="/assets/css/main.css"?>
-<?init class="org.zkoss.zk.ui.util.Composition" arg0="/layout/template.zul"?>
+<?page id="pgMainWindow" title="HELioPora LOOK4" contentType="text/html;charset=UTF-8"?>
 <zk>
-    <include self="@define(content)" src="dashboard.zul"/>
+	<window title="HELioPora LOOK4" id="winMain" border="normal"
+		height="100%" width="100%" sclass="hpt_window" closable="true"
+		mode="modal">
+		<include src="/layout/menus/main_menu.zul"></include>
+		<space height="3px" orient="horizontal"></space>
+		<hbox id="hbOrgUnit" width="100%" pack="start">
+			<combobox id="cbOrgUnit" onCreate="self.setSelectedIndex(0)"
+				readonly="true">
+				<comboitem label="Heliopora"></comboitem>
+				<comboitem label="Heliopora Czech"></comboitem>
+			</combobox>
+		</hbox>
+		<space height="5px" orient="horizontal"></space>
+		<tabbox id="tabboxMain">
+			<tabs id="main_tabs">
+				<tab label="${labels.application.title.tracking }"
+					id="main_tab_tracking">
+				</tab>
+				<tab label="${labels.application.title.reports }"
+					id="main_tab_reports">
+				</tab>
+			</tabs>
+			<tabpanels id="main_tabpanels">
+				<tabpanel id="main_tabpanel_tracking" height="100%"
+					width="100%">
+					<include src="/layout/tracking/tracking_tab.zul"
+						height="100%" width="100%">
+					</include>
+				</tabpanel>
+				<tabpanel id="main_tabpanel_alert">
+					<include src="/layout/reports/reports_tab.zul">
+					</include>
+				</tabpanel>
+			</tabpanels>
+		</tabbox>
+	</window>
+	<include src="/layout/hpt_styles.zul"></include>
 </zk>
+	

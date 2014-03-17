@@ -20,5 +20,9 @@
  			<key column="ORGANIZATION_UNIT_ID"/>
  			<many-to-many column="USER_BUSINESS_DETAIL_ID" class="eu.heliopora.look4.application.users.entities.UserBusinessDetail"/>	
  		</set>
- 	</class>
+ 		<set name="businessObjects" table="BUSINESS_OBJECT" inverse="true" lazy="true" fetch="select" cascade="">
+ 			<key column="ID" not-null="true" />
+ 			<one-to-many class="eu.heliopora.look4.business.objects.entities.BusinessObject"/>
+ 		</set>
+ 	</class>		
 </hibernate-mapping>

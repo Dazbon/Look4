@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8' ?>
 
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<hibernate-mapping package="eu.heliopora.look4.business.objects.entities">
-    <class name="BusinessObject" table="BUSINESS_OBJECT">        
+<hibernate-mapping package="eu.heliopora.look4.tracking.resources.entities">
+    <class name="ResourceTrackingDetail" table="RESOURCE_TRACKING_DETAIL">        
     	<id name="id" column="ID" type="string" length="24">
       		<generator class="assigned"/>
     	</id>
@@ -10,7 +10,10 @@
       	<property name="creationTime" column="CREATION_TIME" type="timestamp"/>
     	<property name="modificationTime" column="MODIFICATION_TIME" type="timestamp"/>
     	<property name="deleted" column="DELETED" type="yes_no" not-null="true"/>
-    	<property name="internalNumber" column="INTERNAL_NUMBER" type="string" length="32"/>
- 	    <many-to-one name="organizationUnit" class="eu.heliopora.look4.business.organization.entities.OrganizationUnit" fetch="select" column="ORGANIZATION_UNIT_ID" not-null="true" unique="true" lazy="false" cascade=""/>      	   	 	   	    
-  	</class>
+    	<many-to-one name="trackingDevice" class="eu.heliopora.look4.tracking.trackingDevices.entities.TrackingDevice" column="TRACKING_DEVICE_ID" lazy="false" cascade=""/>      	   	 	   	    	
+  		<set name="resources" table="RESOURCE" inverse="true" lazy="true" fetch="select" cascade="">
+ 			<key column="ID" not-null="true" />
+ 			<one-to-many class="eu.heliopora.look4.tracking.resources.entities.Resource"/>
+ 		</set>
+  	 </class>
 </hibernate-mapping>

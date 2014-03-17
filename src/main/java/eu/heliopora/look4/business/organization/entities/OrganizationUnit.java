@@ -15,6 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import eu.heliopora.look4.application.users.entities.UserBusinessDetail;
+import eu.heliopora.look4.business.objects.entities.BusinessObject;
 import eu.heliopora.look4.commons.entities.base.BasePersistentObjectImpl;
 import eu.heliopora.look4.commons.interfaces.IBuilder;
 
@@ -43,6 +44,8 @@ public class OrganizationUnit extends BasePersistentObjectImpl implements Serial
 
     private Set<UserBusinessDetail> userBusinessDetails;
 
+    private Set<BusinessObject> businessObjects;
+
     // Methods
 
     public Boolean isRootOrganizationUnit() {
@@ -62,6 +65,7 @@ public class OrganizationUnit extends BasePersistentObjectImpl implements Serial
         this.parentOrganizationUnit = builder.parentOrganizationUnit;
         this.childOrganizationUnits = builder.childOrganizationUnits;
         this.userBusinessDetails = builder.userBusinessDetails;
+        this.businessObjects = builder.businessObjects;
     }
 
     // Builder
@@ -71,6 +75,7 @@ public class OrganizationUnit extends BasePersistentObjectImpl implements Serial
         private OrganizationUnit parentOrganizationUnit;
         private Set<OrganizationUnit> childOrganizationUnits;
         private Set<UserBusinessDetail> userBusinessDetails;
+        private Set<BusinessObject> businessObjects;
 
         public Builder name(String name) {
             this.name = name;
@@ -89,6 +94,11 @@ public class OrganizationUnit extends BasePersistentObjectImpl implements Serial
 
         public Builder userBusinessDetails(Set<UserBusinessDetail> userBusinessDetails) {
             this.userBusinessDetails = userBusinessDetails;
+            return this;
+        }
+
+        public Builder businessObjects(Set<BusinessObject> businessObjects) {
+            this.businessObjects = businessObjects;
             return this;
         }
 
@@ -135,6 +145,15 @@ public class OrganizationUnit extends BasePersistentObjectImpl implements Serial
     public void setUserBusinessDetails(Set<UserBusinessDetail> userBusinessDetails) {
         this.userBusinessDetails = userBusinessDetails;
     }
+
+    public Set<BusinessObject> getBusinessObjects() {
+        return businessObjects;
+    }
+
+    public void setBusinessObjects(Set<BusinessObject> businessObjects) {
+        this.businessObjects = businessObjects;
+    }
+
 
     // Setting and initializing Servlet context, so we can inject Spring Beans into Hibernate
     // Entities

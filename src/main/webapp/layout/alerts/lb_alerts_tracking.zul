@@ -1,0 +1,28 @@
+<zk>
+	<listbox>
+		<listhead>
+			<listheader label="${labels.lb_header.priority }" sort="auto"></listheader>
+			<listheader label="Alert" sort="auto"></listheader>
+			<listheader label="Time" sort="auto"></listheader>
+			<listheader label="Position" sort="auto"></listheader>
+			<listheader label="Read by" sort="auto"></listheader>
+			<listheader label="Read when" sort="auto"></listheader>			
+		</listhead>
+		<listitem>
+			<listcell label="High"></listcell>
+			<listcell label="Fall down"></listcell>
+			<listcell label="01.02.2014 6:53:31"></listcell>
+			<listcell label="51.15.34N 16.26.39E"></listcell>
+			<listcell label="Joseph"></listcell>
+			<listcell label="01.02.2014 8:25:30"></listcell>			
+		</listitem>
+		<listitem>
+			<listcell label="Medium"></listcell>
+			<listcell label="Fall down"></listcell>
+			<listcell label="01.02.2014 7:53:31"></listcell>
+			<listcell label="51.15.34N 16.26.39E"></listcell>
+			<listcell label="Joseph"></listcell>
+			<listcell label="01.02.2014 8:25:30"></listcell>			
+		</listitem>		
+	</listbox>
+</zk>
