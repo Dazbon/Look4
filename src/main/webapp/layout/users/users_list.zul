@@ -1,0 +1,19 @@
+
+
+<zk>
+	<window id="userTabWindow" border="none" apply="eu.heliopora.look4.webapp.user.UserController">
+		<vlayout id="vl1" width="100%" height="100%">
+			<include id="incHeader"
+				src="/layout/templates/t_hbox_mgmt_header.zul"
+				style="border-bottom: none; padding:10px">
+			</include>
+			<include id="inclbUsers"
+				src="/layout/users/lb_users_list.zul">
+			</include>
+			<include id="incButtonsDlg"
+				src="/layout/templates/buttons_management.zul">
+			</include>
+		</vlayout>
+		<include src="/layout/hpt_styles.zul"></include>
+	</window>
+</zk>

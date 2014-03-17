@@ -1,0 +1,17 @@
+
+<zk>
+	<hlayout id="hlButtons">
+		<button id="btnAdd" label="Add"
+			autodisable="true">
+		</button>
+		<button id="btnModify"
+			label="Edit" autodisable="true">
+		</button>
+		<button id="btnEnable"
+			label="Enable" autodisable="true">
+		</button>
+		<button id="btnDisable"
+			label="Disable" autodisable="true">
+		</button>
+	</hlayout>
+</zk>

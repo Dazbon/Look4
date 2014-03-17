@@ -1,0 +1,72 @@
+
+<zk>
+	<grid id="grUserEdit">
+		<columns>
+			<column label="" align="right" hflex="1"></column>
+			<column label="" hflex="2"></column>
+		</columns>
+		<rows id="rwsUserEdit">
+			<row id="rwUserName">
+				<label value="Username:"></label>
+				<textbox id="tbxUserName"
+					constraint="no empty:${labels.application.error.required }"
+					hflex="1">
+				</textbox>
+			</row>
+			<row id="rwFName">
+				<label value="First Name:"></label>
+				<textbox  id="tbxFName"
+					constraint="no empty:${labels.application.error.required }"
+					hflex="1">
+				</textbox>
+			</row>
+			<row id="rwLName">
+				<label value="Last Name:"></label>
+				<textbox id="tbxLName" constraint="no empty:${labels.application.error.required }"
+				hflex="1"></textbox>
+			</row>
+			<row id="rwPWD">
+				<label value="Password:"></label>
+				<textbox id="tbxPWD" type="password" constraint="no empty:${labels.application.error.required }"
+				hflex="1"></textbox>
+			</row>
+			<row id="rwRePWD">
+				<label value="Re-enter password:"></label>
+				<textbox id="tbxRePWD" type="password" constraint="no empty:${labels.application.error.required }"
+				hflex="1"></textbox>
+			</row>
+			<row  id="rwGroup">
+				<label value="Group:"></label>
+				<!-- Tady se to bude plnit dynamicky podle OU se vyberou Group, ktere pod ni patri -->
+				<combobox id="cbxGroup"
+					constraint="no empty:${labels.application.error.required }"
+					hflex="1" readonly="true">
+					<comboitem label="Admin"></comboitem>
+					<comboitem label="User"></comboitem>
+				</combobox>
+			</row>
+			<row id="rwRole">
+				<label value="Role:"></label>
+				<!-- Tady se to bude plnit dynamicky -->
+				<combobox id="cbxRole"
+					constraint="no empty:${labels.application.error.required }"
+					hflex="1" readonly="true">
+					<comboitem label="Role 1"></comboitem>
+					<comboitem label="Role 2"></comboitem>
+				</combobox>
+			</row>
+			<row id="rwPersID">
+				<label value="ID:"></label>
+				<textbox id="tbxPersID" hflex="1"></textbox>
+			</row>
+			<row id="rwPhone">
+				<label value="Phone:"></label>
+				<textbox id="tbxPhone" hflex="1"></textbox>
+			</row>
+			<row id="rwEmail">
+				<label value="Email:"></label>
+				<textbox id="tbxEmail" hflex="1"></textbox>
+			</row>
+		</rows>
+	</grid>
+</zk>

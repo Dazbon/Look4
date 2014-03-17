@@ -1,0 +1,14 @@
+
+<zk>
+	<window id="UserDialog" title="" border="normal" closable="true"
+		sizable="true" height="500px" width="500px" maximizable="true"
+		apply="eu.heliopora.look4.webapp.user.UserEditController">
+
+		<include id="incUserEditForm" src="/layout/users/form_user_edit.zul" width="100%"></include>
+		<space orient="horizontal" height="10px"></space>
+		<hbox>
+			<button id="btnSave" label="Save"></button>
+			<button id="btnCancel" label="Cancel"></button>
+		</hbox>
+	</window>
+</zk>

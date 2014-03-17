@@ -1,0 +1,9 @@
+
+<zk>
+	<label value="${labels.application.label.filter}:" style="font-weight:bold"></label>
+	<textbox id="txboxFilter" width="30"></textbox>
+	<button id="btnApplyFilter" label="" image="/assets/imgs/icons/dialog-accept.png" tooltip="true" tooltiptext="${labels.tooltip.applyfilter }"></button>
+	<button id="btnCancelFilter" label="" image="/assets/imgs/icons/dialog-cancel.png" tooltip="true" tooltiptext="${labels.tooltip.cancelfilter }"></button>
+	<button id="btnRefreshView" label="" image="/assets/imgs/icons/view-refresh.png" tooltip="true" tooltiptext="${labels.tooltip.refreshview }"></button>
+<!--	<button id="btn_centerposition" label="" onClick="" image="/images/icons/center-position.png" tooltip="true" tooltiptext="${labels.tooltip.centerposition }"></button>-->
+</zk>

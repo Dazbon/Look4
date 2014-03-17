@@ -1,0 +1,23 @@
+
+<zk>
+	<listbox id="l_tracking_detail" rows="1">
+		<listhead sizable="true" id="lh_1">
+			<listheader label="Battery" sort="auto" hflex="1">
+			</listheader>
+			<listheader label="Last Message Time" sort="auto" hflex="2">
+			</listheader>
+			<listheader label="Position" sort="auto" hflex="2"></listheader>
+			<listheader label="Last Position Time" sort="auto" hflex="2"></listheader>
+		</listhead>
+
+
+	</listbox>
+</zk>
+
+<!-- 		<listitem>
+			<listcell label="Good"></listcell>
+			<listcell label="01.02.2014 7:36:45"></listcell>
+			<listcell label="50.05.15N 15.26.06E"></listcell>
+			<listcell label="01.02.2014 7:36:40"></listcell>
+		</listitem>
+		 -->

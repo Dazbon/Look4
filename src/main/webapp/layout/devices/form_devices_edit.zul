@@ -1,0 +1,30 @@
+<zk>
+	<grid>
+		<columns>
+			<column label="" align="right" hflex="4"></column>
+			<column label="" hflex="6"></column>
+		</columns>
+		<rows>
+			<row>
+				<label value="Device:"></label>
+				<textbox constraint="no empty:${labels.application.error.required }"></textbox>
+			</row>
+			<row>
+				<label value="Phone number:"></label>
+				<textbox></textbox>
+			</row>
+			<row>
+				<label value="IMEI:"></label>
+				<textbox constraint="no empty:${labels.application.error.required }"></textbox>
+			</row>
+			<row>
+				<label value="Assigned Subject:"></label>
+					<hbox>				
+						<textbox disabled="true"></textbox>
+						<button label="..." onClick=""></button>
+						<button label="${labels.application.button.removelink }" onClick=""></button>
+				</hbox>
+			</row>
+		</rows>
+	</grid>
+</zk>

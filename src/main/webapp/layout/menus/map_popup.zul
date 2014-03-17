@@ -1,0 +1,8 @@
+
+<zk>
+	<menupopup id="editPopup">
+		<menuitem label="${labels.tooltip.find }" image="/assets/imgs/icons/edit-find.png" />
+		<menuitem label="${labels.tooltip.showalerts }" checkmark="true" onClick=""
+			checked="false" autocheck="true" />
+	</menupopup>
+</zk>

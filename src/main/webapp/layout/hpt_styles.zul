@@ -1,0 +1,10 @@
+
+<zk>
+	<style>
+		.hpt_window .z-window-header {font-weight:bold !important;
+		font-size:16px;}
+	</style>
+	<style>
+		.hpt_menu .z-menu-text {font-size:16px;} .z-menuitem-text {font-size:16px;}
+	</style>
+</zk>

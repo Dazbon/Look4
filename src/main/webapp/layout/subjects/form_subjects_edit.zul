@@ -1,0 +1,27 @@
+<?page title="" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<grid>
+		<columns>
+			<column label="" align="right" hflex="4"></column>
+			<column label="" hflex="6"></column>
+		</columns>
+		<rows>
+			<row>
+				<label value="Tracked Subject:"></label>
+				<textbox constraint="no empty:${labels.application.error.required }"></textbox>
+			</row>
+			<row>
+				<label value="Identification:"></label>
+				<textbox></textbox>
+			</row>
+			<row>
+				<label value="Assigned Device:"></label>
+					<hbox>				
+						<textbox disabled="true"></textbox>
+						<button label="..." onClick=""></button>
+						<button label="Remove" onClick=""></button>
+				</hbox>
+			</row>
+		</rows>
+	</grid>
+</zk>
