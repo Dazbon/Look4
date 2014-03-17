@@ -29,5 +29,7 @@
     <import resource="application-beans/application-beans.xml"/>
     
     <import resource="business-beans/business-beans.xml"/>
+    
+    <import resource="tracking-beans/tracking-beans.xml"/>
 	
 </beans>
