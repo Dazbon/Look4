@@ -29,7 +29,7 @@
 		<template name="model">
 			<listitem>
 				<listcell label=""
-					image="assets/imgs/icons/${each.bDeleted ? 'dialog-cancel' : 'empty'}.png">
+					image="/assets/imgs/icons/${each.bDeleted ? 'dialog-cancel' : 'empty'}.png">
 				</listcell>
 				<listcell label="${each.lastName}, ${each.firstName}"></listcell>
 				<listcell label="${each.userName}"></listcell>
